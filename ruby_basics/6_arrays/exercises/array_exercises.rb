@@ -11,29 +11,34 @@ def third_element(array)
 end
 
 def last_three_elements(array)
+  array.last(3)
   # return the last 3 elements of the array
 end
 
-def add_element(array)
-  # add an element (of any value) to the array
-end
+def add_element(numbers)
+  numbers << 5
+   # add an element (of any value) to the array
+ end
 
 def remove_last_element(array)
+
+  array.reverse.drop(1).reverse
   # Step 1: remove the last element from the array
 
   # Step 2: return the array (because Step 1 returns the value of the element removed)
-  array
+  
 end
 
 def remove_first_three_elements(array)
   # Step 1: remove the first three elements
 
   # Step 2: return the array (because Step 1 returns the values of the elements removed)
-  array
+  array.drop(3)
 end
 
 def array_concatenation(original, additional)
   # return an array adding the original and additional array together
+  original + additional
 end
 
 def array_difference(original, comparison)
